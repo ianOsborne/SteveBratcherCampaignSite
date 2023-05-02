@@ -1,39 +1,73 @@
-﻿<div class="top-row ps-3 navbar navbar-dark">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="">Static Web Apps</a>
-        <button title="Navigation menu" class="navbar-toggler" @onclick="ToggleNavMenu">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    </div>
-</div>
+﻿<div id="main-nav" class="navbar navbar-inverse bs-docs-nav fixed" role="banner" style="min-height: 75px;">
 
-<div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
-    <nav class="flex-column">
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <span class="oi oi-home" aria-hidden="true"></span> Home
-            </NavLink>
-        </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="counter">
-                <span class="oi oi-plus" aria-hidden="true"></span> Counter
-            </NavLink>
-        </div>
-        <div class="nav-item px-3">
-            <NavLink class="nav-link" href="fetchdata">
-                <span class="oi oi-list-rich" aria-hidden="true"></span> Fetch data
-            </NavLink>
-        </div>
-    </nav>
-</div>
+    <div class="container">
 
+
+        <div class="navbar-header responsive-logo">
+
+            <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+
+                <span class="sr-only">Toggle navigation</span>
+
+                <span class="icon-bar"></span>
+
+                <span class="icon-bar"></span>
+
+                <span class="icon-bar"></span>
+
+            </button>
+
+            <div class="navbar-brand" itemscope="" itemtype="http://schema.org/Organization">
+
+                <div class="site-title-tagline-wrapper">
+                    <h1 class="site-title">
+                        <a href=" https://stevebratcher.com/ " data-wpel-link="internal" target="_self" rel="noopener noreferrer">
+                            Steve Bratcher for the 25th District
+                        </a>
+                    </h1>
+
+
+                </div> <!-- /.site-title-tagline-wrapper -->
+
+
+            </div> <!-- /.navbar-brand -->
+
+        </div> <!-- /.navbar-header -->
+
+
+
+        <nav class="navbar-collapse bs-navbar-collapse collapse" id="site-navigation" itemscope="" itemtype="http://schema.org/SiteNavigationElement" style="height: 0px;">
+            <a class="screen-reader-text skip-link" href="#content">Skip to content</a>
+            <ul id="menu-main-menu" class="nav navbar-nav navbar-right responsive-nav main-nav-list">
+                <li id="menu-item-57" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-52 current_page_item menu-item-57">
+                    <a href="/" aria-current="page" data-wpel-link="internal" target="_self" rel="noopener noreferrer">Home</a>
+                </li>
+                <li id="menu-item-37" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37">
+                    <a href="/about" data-wpel-link="internal" target="_self" rel="noopener noreferrer">About</a>
+                </li>
+                <li id="menu-item-28" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28">
+                    <a href="/contact" data-wpel-link="internal" target="_self" rel="noopener noreferrer">Contact</a>
+                </li>
+                <li id="menu-item-278" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-278">
+                    <a href="/district-map" data-wpel-link="internal" target="_self" rel="noopener noreferrer">District Map</a>
+                </li>
+                <li id="menu-item-237" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-237">
+                    <a href="/issues" data-wpel-link="internal" target="_self" rel="noopener noreferrer">Issues</a>
+                </li>
+                <li id="menu-item-58" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58">
+                    <a href="/support" data-wpel-link="internal" target="_self" rel="noopener noreferrer">Support</a>
+                </li>
+                <li id="menu-item-210" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-210">
+                    <a href="https://vrsws.sos.ky.gov/ovrweb/" data-wpel-link="external" target="_blank" rel="external noopener noreferrer">Voter Registration</a>
+                </li>
+            </ul>
+        </nav>
+
+
+    </div> <!-- /.container -->
+
+
+</div> <!-- /#main-nav -->
 @code {
-    private bool collapseNavMenu = true;
 
-    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
-
-    private void ToggleNavMenu()
-    {
-        collapseNavMenu = !collapseNavMenu;
-    }
 }
