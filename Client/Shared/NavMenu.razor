@@ -1,22 +1,37 @@
-﻿     <nav class="navbar navbar-expand-lg bg-body navbar-light shadow sticky-top p-0" style="top: -100px;">
-            <a href="/" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
-                <img height="70" src="/img/SteveBratcherLogo.jpg"/>
-            </a>
-            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <div class="navbar-nav ms-auto p-4 p-lg-0">
-                    <a href="/" class="nav-item nav-link">Home</a>
-                    <a href="/about" class="nav-item nav-link">About</a>
-                    <a href="/issues" class="nav-item nav-link">Issues</a>
-                    <a href="/district-map" class="nav-item nav-link">District Map</a>
-                    <a href="/support" class="nav-item nav-link">Support</a>
-                    <a href="/contact" class="nav-item nav-link">Contact</a>
-                </div>
-                <a href="https://vrsws.sos.ky.gov/ovrweb/" target="_blank" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Voter Registration<i class="fa fa-arrow-right ms-3"></i></a>
-            </div>
-        </nav>
+﻿<nav class="navbar navbar-expand-lg bg-body navbar-light shadow sticky-top p-0">
+    <a href="/" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+        <div>
+            <img src="/img/Republicanlogo.svg.png" style="max-width: 30px; position:center; height:auto; display:inline-block; vertical-align:middle" />
+            <h2 class="m-0 text-primary" style="vertical-align:middle; display:inline-block">  Steve Bratcher</h2>
+        </div>
+    </a>
+    <button type="button" class="navbar-toggler me-4" @onclick="ToggleNavBar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="@NavBarCollapse" id="navbarCollapse">
+        <div class="navbar-nav ms-auto p-4 p-lg-0">
+            <a href="/" class="nav-item nav-link">Home</a>
+            <a href="/about" class="nav-item nav-link">About</a>
+            <a href="/issues" class="nav-item nav-link">Issues</a>
+            <a href="/district-map" class="nav-item nav-link">District Map</a>
+            <a href="/support" class="nav-item nav-link">Support</a>
+            <a href="/contact" class="nav-item nav-link">Contact</a>
+        </div>
+        <a href="https://vrsws.sos.ky.gov/ovrweb/" target="_blank" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Voter Registration<i class="fa fa-arrow-right ms-3"></i></a>
+    </div>
+</nav>
 @code {
+    private string NavBarCollapse = "collapse navbar-collapse";
     //TODO: add active class to whichever menu link is currently selected
+    private void ToggleNavBar()
+    {
+        if (NavBarCollapse.Equals("collapse navbar-collapse"))
+        {
+            NavBarCollapse = "collapse navbar-collapse show";
+        }
+        else
+        {
+            NavBarCollapse = "collapse navbar-collapse";
+        }
+    }
 }
