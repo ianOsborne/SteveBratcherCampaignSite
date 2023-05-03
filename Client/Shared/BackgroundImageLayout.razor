@@ -1,0 +1,17 @@
+﻿@inherits LayoutComponentBase
+<body class="custom-background">
+<div class="preloader" style="display: none;"><div class="status" style="display: none;">&nbsp;</div></div>
+
+<div id="mobilebgfix">
+    <div class="mobile-bg-fix-img-wrap">
+        <div class="mobile-bg-fix-img"></div>
+    </div>
+    <div class="mobile-bg-fix-whole-site">
+        <header id="home" class="header" itemscope="itemscope" itemtype="http://schema.org/WPHeader" style="min-height: 76px;">
+            <NavMenu />
+        </header>
+        @Body
+    </div>
+</div>
+<Footer />
+</body>
