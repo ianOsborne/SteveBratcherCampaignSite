@@ -10,12 +10,12 @@
     </button>
     <div class="@NavBarCollapse" id="navbarCollapse">
         <div class="navbar-nav ms-auto p-4 p-lg-0">
-            <a href="/" class="nav-item nav-link">Home</a>
-            <a href="/about" class="nav-item nav-link">About</a>
-            <a href="/issues" class="nav-item nav-link">Issues</a>
-            <a href="/district-map" class="nav-item nav-link">District Map</a>
-            <a href="/support" class="nav-item nav-link">Support</a>
-            <a href="/contact" class="nav-item nav-link">Contact</a>
+            <a @onclick="CloseNavBar" href="/" class="nav-item nav-link">Home</a>
+            <a @onclick="CloseNavBar" href="/about" class="nav-item nav-link">About</a>
+            <a @onclick="CloseNavBar" href="/issues" class="nav-item nav-link">Issues</a>
+            <a @onclick="CloseNavBar" href="/district-map" class="nav-item nav-link">District Map</a>
+            <a @onclick="CloseNavBar" href="/support" class="nav-item nav-link">Support</a>
+            <a @onclick="CloseNavBar" href="/contact" class="nav-item nav-link">Contact</a>
         </div>
         <a href="https://vrsws.sos.ky.gov/ovrweb/" target="_blank" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Voter Registration<i class="fa fa-arrow-right ms-3"></i></a>
     </div>
@@ -30,6 +30,13 @@
             NavBarCollapse = "collapse navbar-collapse show";
         }
         else
+        {
+            NavBarCollapse = "collapse navbar-collapse";
+        }
+    }
+    private void CloseNavBar()
+    {
+        if (NavBarCollapse.Equals("collapse navbar-collapse show"))
         {
             NavBarCollapse = "collapse navbar-collapse";
         }
