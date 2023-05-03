@@ -1,73 +1,22 @@
-﻿<div id="main-nav" class="navbar navbar-inverse bs-docs-nav fixed" role="banner" style="min-height: 75px;">
-
-    <div class="container">
-
-
-        <div class="navbar-header responsive-logo">
-
-            <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
-
-                <span class="sr-only">Toggle navigation</span>
-
-                <span class="icon-bar"></span>
-
-                <span class="icon-bar"></span>
-
-                <span class="icon-bar"></span>
-
+﻿     <nav class="navbar navbar-expand-lg bg-body navbar-light shadow sticky-top p-0" style="top: -100px;">
+            <a href="/" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+                <img height="70" src="/img/SteveBratcherLogo.jpg"/>
+            </a>
+            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
             </button>
-
-            <div class="navbar-brand" itemscope="" itemtype="http://schema.org/Organization">
-
-                <div class="site-title-tagline-wrapper">
-                    <h1 class="site-title">
-                        <a href="/" data-wpel-link="internal" target="_self" rel="noopener noreferrer">
-                            Steve Bratcher for the 25th District
-                        </a>
-                    </h1>
-
-
-                </div> <!-- /.site-title-tagline-wrapper -->
-
-
-            </div> <!-- /.navbar-brand -->
-
-        </div> <!-- /.navbar-header -->
-
-
-
-        <nav class="navbar-collapse bs-navbar-collapse collapse" id="site-navigation" itemscope="" itemtype="http://schema.org/SiteNavigationElement" style="height: 0px;">
-            <a class="screen-reader-text skip-link" href="#content">Skip to content</a>
-            <ul id="menu-main-menu" class="nav navbar-nav navbar-right responsive-nav main-nav-list">
-                <li id="menu-item-57" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-52 current_page_item menu-item-57">
-                    <a href="/" aria-current="page" data-wpel-link="internal" target="_self" rel="noopener noreferrer">Home</a>
-                </li>
-                <li id="menu-item-37" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37">
-                    <a href="/about" data-wpel-link="internal" target="_self" rel="noopener noreferrer">About</a>
-                </li>
-                <li id="menu-item-28" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28">
-                    <a href="/contact" data-wpel-link="internal" target="_self" rel="noopener noreferrer">Contact</a>
-                </li>
-                <li id="menu-item-278" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-278">
-                    <a href="/district-map" data-wpel-link="internal" target="_self" rel="noopener noreferrer">District Map</a>
-                </li>
-                <li id="menu-item-237" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-237">
-                    <a href="/issues" data-wpel-link="internal" target="_self" rel="noopener noreferrer">Issues</a>
-                </li>
-                <li id="menu-item-58" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-58">
-                    <a href="/support" data-wpel-link="internal" target="_self" rel="noopener noreferrer">Support</a>
-                </li>
-                <li id="menu-item-210" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-210">
-                    <a href="https://vrsws.sos.ky.gov/ovrweb/" data-wpel-link="external" target="_blank" rel="external noopener noreferrer">Voter Registration</a>
-                </li>
-            </ul>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto p-4 p-lg-0">
+                    <a href="/" class="nav-item nav-link">Home</a>
+                    <a href="/about" class="nav-item nav-link">About</a>
+                    <a href="/issues" class="nav-item nav-link">Issues</a>
+                    <a href="/district-map" class="nav-item nav-link">District Map</a>
+                    <a href="/support" class="nav-item nav-link">Support</a>
+                    <a href="/contact" class="nav-item nav-link">Contact</a>
+                </div>
+                <a href="https://vrsws.sos.ky.gov/ovrweb/" target="_blank" class="btn btn-primary py-4 px-lg-5 d-none d-lg-block">Voter Registration<i class="fa fa-arrow-right ms-3"></i></a>
+            </div>
         </nav>
-
-
-    </div> <!-- /.container -->
-
-
-</div> <!-- /#main-nav -->
 @code {
-
+    //TODO: add active class to whichever menu link is currently selected
 }

@@ -1,184 +1,66 @@
 ﻿@page "/"
-@layout BackgroundImageLayout
 <PageTitle>Index</PageTitle>
 
-<!-- / END TOP BAR -->
-<div class="home-header-wrap">
-    <div class="header-content-wrap ">
-        <div class="container">
-            <h1 class="intro-text">Elect Steve on November 8</h1>
-            <div class="buttons">
-                <a href="/about" class="btn btn-primary custom-button red-btn" data-wpel-link="internal" target="_self" rel="noopener noreferrer">Get to know Steve</a>
-                <a href="https://secure.anedot.com/c0435ad2-e0e4-4d49-b7f9-23bf1ee1bf65/donate" class="btn btn-primary custom-button green-btn" data-wpel-link="external" target="_blank" rel="external noopener noreferrer">Donate</a>
+<body>
+
+    <div class="container-fluid p-0 mb-5">
+        <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="img/carousel-bg-1.jpg" alt="Image">
+                    <div class="carousel-caption d-flex align-items-center">
+                        <div class="container">
+                            <div class="row align-items-center justify-content-center justify-content-lg-start">
+                                <div class="col-10 col-lg-7 text-center text-lg-start">
+                                    <h5 class="text-white text-uppercase mb-3 animated slideInDown">ELECT</h5>
+                                    <h1 class="display-3 text-white mb-4 pb-3 animated slideInDown">Steve Bratcher</h1>
+                                    <h6 class="text-white text-uppercase mb-3 animated slideInDown">For the 25th District</h6>
+                                    <a href="" class="btn btn-primary py-3 px-5 animated slideInDown">Donate<i class="fa fa-arrow-right ms-3"></i></a>
+                                </div>
+                                <div class="col-lg-5 d-none d-lg-flex animated zoomIn">
+                                    <img class="img-fluid" src="img/carousel-1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-    <!-- .header-content-wrap -->
-    <div class="clear">
-    </div>
-</div>
 
-<di id="content" class="site-content">
 
-    <section class="about-us " id="aboutus">
-
+    <div class="container-xxl py-5">
         <div class="container">
-
-            <!-- SECTION HEADER -->
-
-            <div class="section-header">
-
-                <h2 class="white-text">About Steve</h2><div class="white-text section-legend">Here is a few things to know about Steve Bratcher</div>
-            </div><!-- / END SECTION HEADER -->
-            <!-- 3 COLUMNS OF ABOUT US-->
-
-            <div class="row">
-
-                <!-- COLUMN 1 - BIG MESSAGE ABOUT THE COMPANY-->
-
-                <div class="col-lg-12 col-md-12 column zerif-rtl-skills ">
-
-                    <ul class="skills" data-scrollreveal="enter right after 0s over 1s">
-
-                        <!-- SKILL ONE -->
-                        <li class="skill skill_1">
-                            <div class="skill-count">
-                                <div style="display: inline; width: 64px; height: 200px;">
-                                    <canvas width="128" height="400" style="width: 64px;height: 200px;"></canvas>
-                                    <input role="presentation" type="text" id="military-backgound" value="100" data-thickness=".2" class="skill1" tabindex="-1" readonly="readonly" style="width: 36px; height: 21px; position: absolute; vertical-align: middle; margin-top: 21px; margin-left: -50px; border: 0px; background: none; font: bold 12px Arial; text-align: center; color: rgb(255, 255, 255); padding: 0px; appearance: none;">
-                                </div>
-                            </div>
-                            <div class="section-legend">
-                                <label for="military-backgound">Military Backgound</label>
-                            </div>
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s" style="visibility: visible; animation-delay: 0.1s; animation-name: fadeInUp;">
+                    <div class="d-flex py-5 px-4">
+                        <i class="fa fa-certificate fa-3x text-primary flex-shrink-0"></i>
+                        <div class="ps-4">
+                            <h5 class="mb-3">Military Background</h5>
                             <p>Served in the US Air Force and currently serves in the Kentucky Air National Guard</p>
-                        </li>
-                        <!-- SKILL TWO -->
-
-                        <li class="skill skill_2"><div class="skill-count"><div style="display: inline; width: 64px; height: 200px;"><canvas width="128" height="400" style="width: 64px; height: 200px;"></canvas><input role="presentation" type="text" id="business-minded" value="100" data-thickness=".2" class="skill2" tabindex="-1" readonly="readonly" style="width: 36px; height: 21px; position: absolute; vertical-align: middle; margin-top: 21px; margin-left: -50px; border: 0px; background: none; font: bold 12px Arial; text-align: center; color: rgb(255, 255, 255); padding: 0px; appearance: none;"></div></div><div class="section-legend"><label for="business-minded">Business Minded</label></div><p>Owns a real estate business and served as a broker for many years</p></li>
-                        <!-- SKILL THREE -->
-
-                        <li class="skill skill_3"><div class="skill-count"><div style="display: inline; width: 64px; height: 200px;"><canvas width="128" height="400" style="width: 64px; height: 200px;"></canvas><input role="presentation" type="text" id="community-active" value="100" data-thickness=".2" class="skill3" tabindex="-1" readonly="readonly" style="width: 36px; height: 21px; position: absolute; vertical-align: middle; margin-top: 21px; margin-left: -50px; border: 0px; background: none; font: bold 12px Arial; text-align: center; color: rgb(255, 255, 255); padding: 0px; appearance: none;"></div></div><div class="section-legend"><label for="community-active">Community Active</label></div><p>Serves as a constable in Hardin County and serves on many boards including Habitat for Humanity</p></li>
-                        <!-- SKILL FOUR -->
-
-
-                    </ul>
-
-                </div> <!-- / END SKILLS COLUMN-->
-
-
-            </div>            <!-- CLIENTS -->
-
-        </div> <!-- / END CONTAINER -->
-
-
-    </section> <!-- END ABOUT US SECTION -->
-
-    <section class="contact-us " id="contact">
-        <div class="container">
-            <!-- SECTION HEADER -->
-            <div class="section-header">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                    <div class="d-flex py-5 px-4">
+                        <i class="fa fa-users-cog fa-3x text-primary flex-shrink-0"></i>
+                        <div class="ps-4">
+                            <h5 class="mb-3">Business Minded</h5>
+                            <p>Owns a real estate business and served as a broker for many years</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                    <div class="d-flex py-5 px-4">
+                        <i class="fa fa-tools fa-3x text-primary flex-shrink-0"></i>
+                        <div class="ps-4">
+                            <h5 class="mb-3">Community Active</h5>
+                            <p>Serves as a constable in Hardin County and serves on many boards including Habitat for Humanity</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!-- / END SECTION HEADER -->
+        </div>
+    </div>
 
-            <div class="row">
-                <form id="forminator-module-161" class="forminator-ui forminator-custom-form forminator-custom-form-161 forminator-design--default  forminator_ajax" method="post" data-forminator-render="0" data-form-id="161" data-design="default" data-grid="open" style="" data-uid="6450423b5b593" novalidate="novalidate">
-                    <div class="forminator-response-message forminator-error" aria-hidden="true">
-                    </div>
-                    <div class="forminator-row">
-                        <div id="name-1" class="forminator-col forminator-col-12 ">
-                            <div class="forminator-field">
-                                <label for="forminator-field-name-1_6450423b5b593" class="forminator-label">First Name <span class="forminator-required">*</span></label>
-                                <input type="text" name="name-1" value="" placeholder="E.g. John" id="forminator-field-name-1_6450423b5b593" class="forminator-input forminator-name--field" aria-required="true">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="forminator-row">
-                        <div id="email-1" class="forminator-col forminator-col-12 ">
-                            <div class="forminator-field">
-                                <label for="forminator-field-email-1_6450423b5b593" class="forminator-label">Email Address <span class="forminator-required">*</span></label>
-                                <input type="email" name="email-1" value="" placeholder="E.g. john@doe.com" id="forminator-field-email-1_6450423b5b593" class="forminator-input forminator-email--field" data-required="true" aria-required="true">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="forminator-row">
-                        <div id="address-1" class="forminator-col forminator-col-6 ">
-                            <div class="forminator-row">
-                                <div id="address-1-street_address" class="forminator-col">
-                                    <div class="forminator-field">
-                                        <label for="forminator-field-street_address-address-1_6450423b5b593" class="forminator-label">Street Address</label>
-                                        <input type="text" name="address-1-street_address" placeholder="E.g. 42 Wallaby Way" id="forminator-field-street_address-address-1_6450423b5b593" class="forminator-input" data-required="" aria-required="false" value="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="forminator-row">
-                                <div id="address-1-address_line" class="forminator-col">
-                                    <div class="forminator-field">
-                                        <label for="forminator-field-address_line-address-1_6450423b5b593" class="forminator-label">Apartment, suite, etc</label>
-                                        <input type="text" name="address-1-address_line" placeholder="" id="forminator-field-address_line-address-1_6450423b5b593" class="forminator-input" data-required="" aria-required="false" value="">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="forminator-row" data-multiple="true">
-                                <div id="address-1-city" class="forminator-col forminator-col-6">
-                                    <div class="forminator-field">
-                                        <label for="forminator-field-city-address-1_6450423b5b593" class="forminator-label">City</label>
-                                        <input type="text" name="address-1-city" placeholder="E.g. Sydney" id="forminator-field-city-address-1_6450423b5b593" class="forminator-input" data-required="" aria-required="false" value="">
-                                    </div>
-                                </div>
-                                <div id="address-1-state" class="forminator-col forminator-col-6">
-                                    <div class="forminator-field">
-                                        <label for="forminator-field-state-address-1_6450423b5b593" class="forminator-label">State/Province</label>
-                                        <input type="text" name="address-1-state" placeholder="E.g. New South Wales" id="forminator-field-state-address-1_6450423b5b593" class="forminator-input" data-required="" aria-required="false" value="">
-                                    </div>
-                                </div>
-                            </div><div class="forminator-row" data-multiple="true"><div id="address-1-zip" class="forminator-col forminator-col-6"><div class="forminator-field"><label for="forminator-field-zip-address-1_6450423b5b593" class="forminator-label">ZIP / Postal Code</label><input type="text" name="address-1-zip" placeholder="E.g. 2000" id="forminator-field-zip-address-1_6450423b5b593" class="forminator-input" value=""></div></div><div id="address-1-country" class="forminator-col forminator-col-6"><div class="forminator-field"><label for="forminator-form-161__field--address-1_6450423b5b593" class="forminator-label">Country </label><select name="address-1-country" id="forminator-form-161__field--address-1_6450423b5b593" class="forminator-select2 select2-hidden-accessible forminator-screen-reader-only" data-search="true" data-placeholder="Select country" data-default-value="" data-select2-id="select2-data-forminator-form-161__field--address-1_6450423b5b593" tabindex="-1" aria-hidden="true"><option value="" data-country-code="" selected="selected" data-select2-id="select2-data-2-tcnc"></option><option value="Afghanistan" data-country-code="AF">Afghanistan</option><option value="Albania" data-country-code="AL">Albania</option><option value="Algeria" data-country-code="DZ">Algeria</option><option value="American Samoa" data-country-code="AS">American Samoa</option><option value="Andorra" data-country-code="AD">Andorra</option><option value="Angola" data-country-code="AO">Angola</option><option value="Anguilla" data-country-code="AI">Anguilla</option><option value="Antarctica" data-country-code="AQ">Antarctica</option><option value="Antigua and Barbuda" data-country-code="AG">Antigua and Barbuda</option><option value="Argentina" data-country-code="AR">Argentina</option><option value="Armenia" data-country-code="AM">Armenia</option><option value="Australia" data-country-code="AU">Australia</option><option value="Aruba" data-country-code="AW">Aruba</option><option value="Austria" data-country-code="AT">Austria</option><option value="Azerbaijan" data-country-code="AZ">Azerbaijan</option><option value="Bahamas" data-country-code="BS">Bahamas</option><option value="Bahrain" data-country-code="BH">Bahrain</option><option value="Bangladesh" data-country-code="BD">Bangladesh</option><option value="Barbados" data-country-code="BB">Barbados</option><option value="Belarus" data-country-code="BY">Belarus</option><option value="Belgium" data-country-code="BE">Belgium</option><option value="Belize" data-country-code="BZ">Belize</option><option value="Benin" data-country-code="BJ">Benin</option><option value="Bermuda" data-country-code="BM">Bermuda</option><option value="Bhutan" data-country-code="BT">Bhutan</option><option value="Bolivia" data-country-code="BO">Bolivia</option><option value="Bosnia and Herzegovina" data-country-code="BA">Bosnia and Herzegovina</option><option value="Botswana" data-country-code="BW">Botswana</option><option value="Bouvet Island" data-country-code="BV">Bouvet Island</option><option value="Brazil" data-country-code="BR">Brazil</option><option value="British Indian Ocean Territory" data-country-code="IO">British Indian Ocean Territory</option><option value="Brunei" data-country-code="BN">Brunei</option><option value="Bulgaria" data-country-code="BG">Bulgaria</option><option value="Burkina Faso" data-country-code="BF">Burkina Faso</option><option value="Burundi" data-country-code="BI">Burundi</option><option value="Cambodia" data-country-code="KH">Cambodia</option><option value="Cameroon" data-country-code="CM">Cameroon</option><option value="Canada" data-country-code="CA">Canada</option><option value="Cabo Verde" data-country-code="CV">Cabo Verde</option><option value="Cayman Islands" data-country-code="KY">Cayman Islands</option><option value="Central African Republic" data-country-code="CF">Central African Republic</option><option value="Chad" data-country-code="TD">Chad</option><option value="Chile" data-country-code="CL">Chile</option><option value="China, People's Republic of" data-country-code="CN">China, People's Republic of</option><option value="Christmas Island" data-country-code="CX">Christmas Island</option><option value="Cocos Islands" data-country-code="CC">Cocos Islands</option><option value="Colombia" data-country-code="CO">Colombia</option><option value="Comoros" data-country-code="KM">Comoros</option><option value="Congo, Democratic Republic of the" data-country-code="CD">Congo, Democratic Republic of the</option><option value="Congo, Republic of the" data-country-code="CG">Congo, Republic of the</option><option value="Cook Islands" data-country-code="CK">Cook Islands</option><option value="Costa Rica" data-country-code="CR">Costa Rica</option><option value="Côte d'Ivoire" data-country-code="CI">Côte d'Ivoire</option><option value="Croatia" data-country-code="HR">Croatia</option><option value="Cuba" data-country-code="CU">Cuba</option><option value="Curaçao" data-country-code="CW">Curaçao</option><option value="Cyprus" data-country-code="CY">Cyprus</option><option value="Czech Republic" data-country-code="CZ">Czech Republic</option><option value="Denmark" data-country-code="DK">Denmark</option><option value="Djibouti" data-country-code="DJ">Djibouti</option><option value="Dominica" data-country-code="DM">Dominica</option><option value="Dominican Republic" data-country-code="DO">Dominican Republic</option><option value="East Timor" data-country-code="TL">East Timor</option><option value="Ecuador" data-country-code="EC">Ecuador</option><option value="Egypt" data-country-code="EG">Egypt</option><option value="El Salvador" data-country-code="SV">El Salvador</option><option value="Equatorial Guinea" data-country-code="GQ">Equatorial Guinea</option><option value="Eritrea" data-country-code="ER">Eritrea</option><option value="Estonia" data-country-code="EE">Estonia</option><option value="Ethiopia" data-country-code="ET">Ethiopia</option><option value="Falkland Islands" data-country-code="FK">Falkland Islands</option><option value="Faroe Islands" data-country-code="FO">Faroe Islands</option><option value="Fiji" data-country-code="FJ">Fiji</option><option value="Finland" data-country-code="FI">Finland</option><option value="France" data-country-code="FR">France</option><option value="France, Metropolitan" data-country-code="FX">France, Metropolitan</option><option value="French Guiana" data-country-code="GF">French Guiana</option><option value="French Polynesia" data-country-code="PF">French Polynesia</option><option value="French South Territories" data-country-code="TF">French South Territories</option><option value="Gabon" data-country-code="GA">Gabon</option><option value="Gambia" data-country-code="GM">Gambia</option><option value="Georgia" data-country-code="GE">Georgia</option><option value="Germany" data-country-code="DE">Germany</option><option value="Guernsey" data-country-code="GG">Guernsey</option><option value="Ghana" data-country-code="GH">Ghana</option><option value="Gibraltar" data-country-code="GI">Gibraltar</option><option value="Greece" data-country-code="GR">Greece</option><option value="Greenland" data-country-code="GL">Greenland</option><option value="Grenada" data-country-code="GD">Grenada</option><option value="Guadeloupe" data-country-code="GP">Guadeloupe</option><option value="Guam" data-country-code="GU">Guam</option><option value="Guatemala" data-country-code="GT">Guatemala</option><option value="Guinea" data-country-code="GN">Guinea</option><option value="Guinea-Bissau" data-country-code="GW">Guinea-Bissau</option><option value="Guyana" data-country-code="GY">Guyana</option><option value="Haiti" data-country-code="HT">Haiti</option><option value="Heard Island And Mcdonald Island" data-country-code="HM">Heard Island And Mcdonald Island</option><option value="Honduras" data-country-code="HN">Honduras</option><option value="Hong Kong" data-country-code="HK">Hong Kong</option><option value="Hungary" data-country-code="HU">Hungary</option><option value="Iceland" data-country-code="IS">Iceland</option><option value="India" data-country-code="IN">India</option><option value="Indonesia" data-country-code="ID">Indonesia</option><option value="Iran" data-country-code="IR">Iran</option><option value="Iraq" data-country-code="IQ">Iraq</option><option value="Ireland" data-country-code="IE">Ireland</option><option value="Israel" data-country-code="IL">Israel</option><option value="Italy" data-country-code="IT">Italy</option><option value="Jamaica" data-country-code="JM">Jamaica</option><option value="Japan" data-country-code="JP">Japan</option><option value="Jersey" data-country-code="JE">Jersey</option><option value="Johnston Island" data-country-code="JT">Johnston Island</option><option value="Jordan" data-country-code="JO">Jordan</option><option value="Kazakhstan" data-country-code="KZ">Kazakhstan</option><option value="Kenya" data-country-code="KE">Kenya</option><option value="Kiribati" data-country-code="KI">Kiribati</option><option value="Korea, Democratic People's Republic of" data-country-code="KP">Korea, Democratic People's Republic of</option><option value="Korea, Republic of" data-country-code="KR">Korea, Republic of</option><option value="Kosovo" data-country-code="XK">Kosovo</option><option value="Kuwait" data-country-code="KW">Kuwait</option><option value="Kyrgyzstan" data-country-code="KG">Kyrgyzstan</option><option value="Lao People's Democratic Republic" data-country-code="LA">Lao People's Democratic Republic</option><option value="Latvia" data-country-code="LV">Latvia</option><option value="Lebanon" data-country-code="LB">Lebanon</option><option value="Lesotho" data-country-code="LS">Lesotho</option><option value="Liberia" data-country-code="LR">Liberia</option><option value="Libya" data-country-code="LY">Libya</option><option value="Liechtenstein" data-country-code="LI">Liechtenstein</option><option value="Lithuania" data-country-code="LT">Lithuania</option><option value="Luxembourg" data-country-code="LU">Luxembourg</option><option value="Macau" data-country-code="MO">Macau</option><option value="North Macedonia" data-country-code="MK">North Macedonia</option><option value="Madagascar" data-country-code="MG">Madagascar</option><option value="Malawi" data-country-code="MW">Malawi</option><option value="Malaysia" data-country-code="MY">Malaysia</option><option value="Maldives" data-country-code="MV">Maldives</option><option value="Mali" data-country-code="ML">Mali</option><option value="Malta" data-country-code="MT">Malta</option><option value="Marshall Islands" data-country-code="MH">Marshall Islands</option><option value="Martinique" data-country-code="MQ">Martinique</option><option value="Mauritania" data-country-code="MR">Mauritania</option><option value="Mauritius" data-country-code="MU">Mauritius</option><option value="Mayotte" data-country-code="YT">Mayotte</option><option value="Mexico" data-country-code="MX">Mexico</option><option value="Micronesia" data-country-code="FM">Micronesia</option><option value="Moldova" data-country-code="MD">Moldova</option><option value="Monaco" data-country-code="MC">Monaco</option><option value="Mongolia" data-country-code="MN">Mongolia</option><option value="Montserrat" data-country-code="MS">Montserrat</option><option value="Montenegro" data-country-code="ME">Montenegro</option><option value="Morocco" data-country-code="MA">Morocco</option><option value="Mozambique" data-country-code="MZ">Mozambique</option><option value="Myanmar" data-country-code="MM">Myanmar</option><option value="Namibia" data-country-code="NA">Namibia</option><option value="Nauru" data-country-code="NR">Nauru</option><option value="Nepal" data-country-code="NP">Nepal</option><option value="Netherlands" data-country-code="NL">Netherlands</option><option value="Netherlands Antilles" data-country-code="AN">Netherlands Antilles</option><option value="New Caledonia" data-country-code="NC">New Caledonia</option><option value="New Zealand" data-country-code="NZ">New Zealand</option><option value="Nicaragua" data-country-code="NI">Nicaragua</option><option value="Niger" data-country-code="NE">Niger</option><option value="Nigeria" data-country-code="NG">Nigeria</option><option value="Niue" data-country-code="NU">Niue</option><option value="Norfolk Island" data-country-code="NF">Norfolk Island</option><option value="Northern Mariana Islands" data-country-code="MP">Northern Mariana Islands</option><option value="Norway" data-country-code="NO">Norway</option><option value="Oman" data-country-code="OM">Oman</option><option value="Pakistan" data-country-code="PK">Pakistan</option><option value="Palau" data-country-code="PW">Palau</option><option value="Palestine, State of" data-country-code="PS">Palestine, State of</option><option value="Panama" data-country-code="PA">Panama</option><option value="Papua New Guinea" data-country-code="PG">Papua New Guinea</option><option value="Paraguay" data-country-code="PY">Paraguay</option><option value="Peru" data-country-code="PE">Peru</option><option value="Philippines" data-country-code="PH">Philippines</option><option value="Pitcairn Islands" data-country-code="PN">Pitcairn Islands</option><option value="Poland" data-country-code="PL">Poland</option><option value="Portugal" data-country-code="PT">Portugal</option><option value="Puerto Rico" data-country-code="PR">Puerto Rico</option><option value="Qatar" data-country-code="QA">Qatar</option><option value="Reunion Island" data-country-code="RE">Reunion Island</option><option value="Romania" data-country-code="RO">Romania</option><option value="Russia" data-country-code="RU">Russia</option><option value="Rwanda" data-country-code="RW">Rwanda</option><option value="Saint Kitts and Nevis" data-country-code="KN">Saint Kitts and Nevis</option><option value="Saint Lucia" data-country-code="LC">Saint Lucia</option><option value="Saint Vincent and the Grenadines" data-country-code="VC">Saint Vincent and the Grenadines</option><option value="Samoa" data-country-code="WS">Samoa</option><option value="Saint Helena" data-country-code="SH">Saint Helena</option><option value="Saint Pierre &amp; Miquelon" data-country-code="PM">Saint Pierre &amp; Miquelon</option><option value="San Marino" data-country-code="SM">San Marino</option><option value="Sao Tome and Principe" data-country-code="ST">Sao Tome and Principe</option><option value="Saudi Arabia" data-country-code="SA">Saudi Arabia</option><option value="Senegal" data-country-code="SN">Senegal</option><option value="Serbia" data-country-code="RS">Serbia</option><option value="Seychelles" data-country-code="SC">Seychelles</option><option value="Sierra Leone" data-country-code="SL">Sierra Leone</option><option value="Singapore" data-country-code="SG">Singapore</option><option value="Sint Maarten" data-country-code="MF">Sint Maarten</option><option value="Slovakia" data-country-code="SK">Slovakia</option><option value="Slovenia" data-country-code="SI">Slovenia</option><option value="Solomon Islands" data-country-code="SB">Solomon Islands</option><option value="Somalia" data-country-code="SO">Somalia</option><option value="South Africa" data-country-code="ZA">South Africa</option><option value="South Georgia and South Sandwich" data-country-code="GS">South Georgia and South Sandwich</option><option value="Spain" data-country-code="ES">Spain</option><option value="Sri Lanka" data-country-code="LK">Sri Lanka</option><option value="Stateless Persons" data-country-code="XX">Stateless Persons</option><option value="Sudan" data-country-code="SD">Sudan</option><option value="Sudan, South" data-country-code="SS">Sudan, South</option><option value="Suriname" data-country-code="SR">Suriname</option><option value="Svalbard and Jan Mayen" data-country-code="SJ">Svalbard and Jan Mayen</option><option value="Swaziland" data-country-code="SZ">Swaziland</option><option value="Sweden" data-country-code="SE">Sweden</option><option value="Switzerland" data-country-code="CH">Switzerland</option><option value="Syria" data-country-code="SY">Syria</option><option value="Taiwan, Republic of China" data-country-code="TW">Taiwan, Republic of China</option><option value="Tajikistan" data-country-code="TJ">Tajikistan</option><option value="Tanzania" data-country-code="TZ">Tanzania</option><option value="Thailand" data-country-code="TH">Thailand</option><option value="Togo" data-country-code="TG">Togo</option><option value="Tokelau" data-country-code="TK">Tokelau</option><option value="Tonga" data-country-code="TO">Tonga</option><option value="Trinidad and Tobago" data-country-code="TT">Trinidad and Tobago</option><option value="Tunisia" data-country-code="TN">Tunisia</option><option value="Turkey" data-country-code="TR">Turkey</option><option value="Turkmenistan" data-country-code="TM">Turkmenistan</option><option value="Turks And Caicos Islands" data-country-code="TC">Turks And Caicos Islands</option><option value="Tuvalu" data-country-code="TV">Tuvalu</option><option value="Uganda" data-country-code="UG">Uganda</option><option value="Ukraine" data-country-code="UA">Ukraine</option><option value="United Arab Emirates" data-country-code="AE">United Arab Emirates</option><option value="United Kingdom" data-country-code="GB">United Kingdom</option><option value="US Minor Outlying Islands" data-country-code="UM">US Minor Outlying Islands</option><option value="United States of America (USA)" data-country-code="US">United States of America (USA)</option><option value="Uruguay" data-country-code="UY">Uruguay</option><option value="Uzbekistan" data-country-code="UZ">Uzbekistan</option><option value="Vanuatu" data-country-code="VU">Vanuatu</option><option value="Vatican City" data-country-code="VA">Vatican City</option><option value="Venezuela" data-country-code="VE">Venezuela</option><option value="Vietnam" data-country-code="VN">Vietnam</option><option value="Virgin Islands, British" data-country-code="VG">Virgin Islands, British</option><option value="Virgin Islands, U.S." data-country-code="VI">Virgin Islands, U.S.</option><option value="Wallis And Futuna Islands" data-country-code="WF">Wallis And Futuna Islands</option><option value="Western Sahara" data-country-code="EH">Western Sahara</option><option value="Yemen Arab Rep." data-country-code="YE">Yemen Arab Rep.</option><option value="Yemen Democratic" data-country-code="YD">Yemen Democratic</option><option value="Zambia" data-country-code="ZM">Zambia</option><option value="Zimbabwe" data-country-code="ZW">Zimbabwe</option></select><span class="select2 select2-container forminator-select" dir="ltr" data-select2-id="select2-data-1-ub3m" style="width: 307px;"><span class="selection"><span class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true" aria-expanded="false" tabindex="0" aria-disabled="false" aria-labelledby="select2-forminator-form-161__field--address-1_6450423b5b593-container" aria-controls="select2-forminator-form-161__field--address-1_6450423b5b593-container"><span class="select2-selection__rendered" id="select2-forminator-form-161__field--address-1_6450423b5b593-container" role="textbox" aria-readonly="true" title="Select country"><span class="select2-selection__placeholder">Select country</span></span><span class="select2-selection__arrow" role="presentation"><span class="forminator-icon-chevron-down" aria-hidden="true"></span></span></span></span><span class="dropdown-wrapper" aria-hidden="true"></span></span></div></div></div>
-                        </div><div id="phone-1" class="forminator-col forminator-col-6 "><div class="forminator-field"><label for="forminator-field-phone-1_6450423b5b593" class="forminator-label">Phone Number</label><input type="text" name="phone-1" value="" placeholder="E.g. +1 3004005000" id="forminator-field-phone-1_6450423b5b593" class="forminator-input forminator-field--phone" data-required="" aria-required="false" autocomplete="off"></div></div>
-                    </div>
-                    <div class="forminator-row">
-                        <div id="textarea-1" class="forminator-col forminator-col-12 ">
-                            <div class="forminator-field">
-                                <label for="forminator-field-textarea-1_6450423b5b593" class="forminator-label">Message</label>
-                                <textarea name="textarea-1" placeholder="Enter your message..." id="forminator-field-textarea-1_6450423b5b593" class="forminator-textarea" rows="6" style="min-height:140px;" maxlength="180">
-
-                                </textarea>
-                                <span id="forminator-field-textarea-1_6450423b5b593-description" class="forminator-description">
-                                    <span data-limit="180" data-type="characters">0 / 180</span>
-                                </span>
-                            </div>
-                        </div>
-                    </div>
-                    <input type="hidden" name="referer_url" value="">
-                    <div class="forminator-row forminator-row-last">
-                        <div class="forminator-col">
-                            <div class="forminator-field">
-                                <button class="forminator-button forminator-button-submit">Send Message</button>
-                            </div>
-                        </div>
-                    </div>
-                    <input type="hidden" id="forminator_nonce" name="forminator_nonce" value="eb023651a6">
-                    <input type="hidden" name="_wp_http_referer" value="/">
-                    <input type="hidden" name="form_id" value="161">
-                    <input type="hidden" name="page_id" value="52">
-                    <input type="hidden" name="form_type" value="default">
-                    <input type="hidden" name="current_url" value="https://stevebratcher.com/">
-                    <input type="hidden" name="render_id" value="0">
-                    <input type="hidden" name="action" value="forminator_submit_form_custom-forms">
-                </form>
-            </div>
-        </div> <!-- / END CONTAINER -->
-
-    </section> <!-- / END CONTACT US SECTION-->
-
-</di><!-- .site-content -->
-<!-- Enter your scripts here -->
-<link rel="stylesheet" id="forminator-module-css-161-css" href="http://stevebratcher.com/wp-content/uploads/forminator/161_7a45ed60d4f4e5072a30dacf093708db/css/style-161.css?ver=1646009665" type="text/css" media="all">
-<link rel="stylesheet" id="forminator-icons-css" href="https://stevebratcher.com/wp-content/plugins/forminator/assets/forminator-ui/css/forminator-icons.min.css?ver=1.23.3" type="text/css" media="all">
-<link rel="stylesheet" id="forminator-utilities-css" href="https://stevebratcher.com/wp-content/plugins/forminator/assets/forminator-ui/css/src/forminator-utilities.min.css?ver=1.23.3" type="text/css" media="all">
-<link rel="stylesheet" id="forminator-grid-default-css" href="https://stevebratcher.com/wp-content/plugins/forminator/assets/forminator-ui/css/src/grid/forminator-grid.open.min.css?ver=1.23.3" type="text/css" media="all">
-<link rel="stylesheet" id="forminator-forms-default-base-css" href="https://stevebratcher.com/wp-content/plugins/forminator/assets/forminator-ui/css/src/form/forminator-form-default.base.min.css?ver=1.23.3" type="text/css" media="all">
-<link rel="stylesheet" id="forminator-forms-default-select2-css" href="https://stevebratcher.com/wp-content/plugins/forminator/assets/forminator-ui/css/src/form/forminator-form-default.select2.min.css?ver=1.23.3" type="text/css" media="all">
-<link rel="stylesheet" id="forminator-forms-default-full-css" href="https://stevebratcher.com/wp-content/plugins/forminator/assets/forminator-ui/css/src/form/forminator-form-default.full.min.css?ver=1.23.3" type="text/css" media="all">
-<link rel="stylesheet" id="intlTelInput-forminator-css-css" href="https://stevebratcher.com/wp-content/plugins/forminator/assets/css/intlTelInput.min.css?ver=4.0.3" type="text/css" media="all">
-<link rel="stylesheet" id="buttons-css" href="https://stevebratcher.com/wp-includes/css/buttons.min.css?ver=6.1.1" type="text/css" media="all">
-<img src="https://pixel.wp.com/g.gif?v=ext&amp;blog=202994286&amp;post=52&amp;tz=0&amp;srv=stevebratcher.com&amp;j=1%3A12.0&amp;host=stevebratcher.com&amp;ref=&amp;fcp=0&amp;rand=0.06582726218274582" alt="" width="6" height="5" id="wpstats">
+</body>

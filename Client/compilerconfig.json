@@ -1,0 +1,8 @@
+[
+  {
+    "outputFile": "wwwroot/css/bootstrap.css",
+    "inputFile": "wwwroot/scss/bootstrap.scss",
+    "sourceMap": false,
+    "useNodeSass": false
+  }
+]
