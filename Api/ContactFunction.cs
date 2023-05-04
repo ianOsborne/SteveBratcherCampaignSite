@@ -28,9 +28,9 @@ namespace Api
             };
             MailMessage message = new();
             message.From = new MailAddress("ianosborne.dev@gmail.com");
-            message.To.Add("ian.cosborne@yahoo.com");
-            message.Body = contactMessage.Name + " \n " + contactMessage.Email + " \n " + contactMessage.Message;
-            message.Subject = "Resume Website";
+            message.To.Add("electstevebratcher@gmail.com");
+            message.Body = $"You have received a new message through your website from {contactMessage.Name}. \nYou can respond to the sender at {contactMessage.Email}. \nThe user has left the following message:\n {contactMessage.Message}";
+            message.Subject = contactMessage.Subject;
             smtpClient.Send(message);
         }
     }

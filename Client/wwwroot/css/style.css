@@ -227,6 +227,7 @@
     .service .nav .nav-link {
         flex: 1;
         text-align: center;
+        margin-right: 1rem;
     }
 }
 
