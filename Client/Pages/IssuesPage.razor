@@ -1,75 +1,36 @@
 ﻿@page "/issues"
 
-
-
-<div>
-
-    <div>
-
-        <div>
-            <div>
-
-                <main>
-
-                    <article>
-
-                        <header>
-
-
-                            <h1>Issues</h1>
-
-                        </header><!-- .entry-header -->
-
-                        <div>
-
-                            <div>
-                                <section>
-                                    <div>
-                                        <div>
-                                            <div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-                                <section>
-                                    <div>
-                                        <div>
-                                            <div>
-                                                <div>
-                                                    <div>
-                                                        <img decoding="async" width="373" height="135" src="https://stevebratcher.com/wp-content/uploads/2022/07/images-1.png" class="attachment-large size-large wp-image-240" alt="" loading="lazy" srcset="https://stevebratcher.com/wp-content/uploads/2022/07/images-1.png 373w, https://stevebratcher.com/wp-content/uploads/2022/07/images-1-300x109.png 300w" sizes="(max-width: 373px) 100vw, 373px">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-                            </div>
-
-                        </div><!-- .entry-content -->
-
-
-                    </article><!-- #post-## -->
-
-                </main><!-- #main -->
-
-            </div><!-- #primary -->
-
+<DefaultHeader Title="Issues" Breadcrumb="Issues" />
+<div class="container-xxl py-5">
+    <div class="container">
+        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+            <h6 class="text-primary text-uppercase">// Steve //</h6>
+            <h1 class="mb-5">On The Issues</h1>
         </div>
-    </div><!-- .container -->
+        <div class="row g-4">
+            @for (int issue = 1; issue <= 8; issue++)
+            {
+                <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <div class="team-item">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid" style="min-height:15rem; object-fit:cover" src="img/economy.jpg" alt="">
+                            <div class="team-overlay position-absolute start-0 top-0 w-100 h-100">
+                                <div class="team-overlay w-100 h-100" style="margin:1rem">
+                                    <p class="mx-1 text-white">Here is where Steve will give a brief opinion on a given issue and then link to a dedicated issue page. If Steve is too wordy here then all kinds of things may happen such as what is about to happen right now as I type this 
+                                        <br/> <a href="" class="btn btn-primary py-1 px-3 mt-3">Read More<i class="fa fa-arrow-right ms-3"></i></a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-light text-center p-4">
+                            <h5 class="fw-bold mb-0">Issue #@issue</h5>
+                            <small>Issue Description</small>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+@code {
 
-
-</div><!-- .site-content -->
-
-
-
-
-
-
-
-
-
-
-
-
-<img src="https://pixel.wp.com/g.gif?v=ext&amp;blog=202994286&amp;post=227&amp;tz=0&amp;srv=stevebratcher.com&amp;j=1%3A12.0&amp;host=stevebratcher.com&amp;ref=&amp;fcp=0&amp;rand=0.7472421904053439" alt="" width="6" height="5" id="wpstats">
+}
