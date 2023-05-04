@@ -1,29 +1,32 @@
 ﻿@page "/issues"
+@using BlazorApp.Shared;
 
 <DefaultHeader Title="Issues" Breadcrumb="Issues" />
 <div class="container-xxl py-5">
     <div class="container">
         <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-            <h6 class="text-primary text-uppercase">// Steve //</h6>
+            <h6 class="text-primary text-uppercase">// Steve's Stance //</h6>
             <h1 class="mb-5">On The Issues</h1>
         </div>
         <div class="row g-4">
-            @for (int issue = 1; issue <= 8; issue++)
+            @foreach (var issue in Issues)
             {
                 <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="team-item">
                         <div class="position-relative overflow-hidden">
-                            <img class="img-fluid" style="min-height:15rem; object-fit:cover" src="img/economy.jpg" alt="">
+                            <img class="img-fluid" style="min-height:15rem; object-fit:cover" src="@issue.ImagePath" alt="">
                             <div class="team-overlay position-absolute start-0 top-0 w-100 h-100">
                                 <div class="team-overlay w-100 h-100" style="margin:1rem">
-                                    <p class="mx-1 text-white">Here is where Steve will give a brief opinion on a given issue and then link to a dedicated issue page. If Steve is too wordy here then all kinds of things may happen such as what is about to happen right now as I type this 
-                                        <br/> <a href="" class="btn btn-primary py-1 px-3 mt-3">Read More<i class="fa fa-arrow-right ms-3"></i></a></p>
+                                    <p class="mx-1 text-white">
+                                        @issue.Description
+                                        <br /> <a href="@issue.IssueUrl" class="btn btn-primary py-1 px-3 mt-3">Read More<i class="fa fa-arrow-right ms-3"></i></a>
+                                    </p>
                                 </div>
                             </div>
                         </div>
                         <div class="bg-light text-center p-4">
-                            <h5 class="fw-bold mb-0">Issue #@issue</h5>
-                            <small>Issue Description</small>
+                            <h5 class="fw-bold mb-0">@issue.Title</h5>
+                            <small>@issue.Subtitle</small>
                         </div>
                     </div>
                 </div>
@@ -32,5 +35,20 @@
     </div>
 </div>
 @code {
+    public IEnumerable<Issue> Issues { get; set; }
+    protected override void OnInitialized()
+    {
+        Issues = new List<Issue>()
+        {
+            new Issue("Education", "Education for All", "Steve will give a concise opinion in this field and then will be able to talk about all of his opinions on education in a separate page.", "img/education.jpg", "/issues/education"),
+            new Issue("Healthcare", "Access for All", "Steve will give a concise opinion in this field and then can describe the rest of his opinion in full detail on a separate page.", "img/healthcare.jpg", "/issues/healthcare"),
+            new Issue("Jobs and Economy", "Strong and Educated Workforce", "Here Steve will give a condensed opinion on the economy and will then be able to discuss more on a separate page.", "img/economy.jpg", "/issues/jobs-and-economy"),
+            new Issue("Taxes", "Lower Spending and Taxes", "Here Steve can give a concise summary of his opinion on taxes, and can then talk in further detail on a dedicated page.", "img/taxes.jpg", "/issues/taxes"),
+            new Issue("Veterans", "Serve Those Who Serve Us", "Steve will give his opinion on veterans and the military here, and then in further detail on a dedicated page.", "img/veterans.jpg", "/issues/veterans"),
+            new Issue("Pensions", "Retirement and Social Security", "Steve will give his thoughts on pensions and social security here, with even more on a dedicated page.", "img/pensions.jpg", "/issues/pensions"),
+            new Issue("Abortion", "Keeping Women and Children Safe", "Here Steve will highlight his views on Abortion, and can go into further detail on his opinion in a separate page.", "img/abortion.jpg", "/issues/abortion"),
+            new Issue("Term Limits", "Keeping our Commonwealth Democratic", "Here Steve will discuss thoughts on term limits, and then go into further detail in a dedicated page.", "img/term-limits.jpg", "/issues/term-limits")
+        };
 
+    }
 }
